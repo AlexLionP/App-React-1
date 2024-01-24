@@ -7,6 +7,7 @@ import Button from './components/Button/Button.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Astros from './components/Astros/Astros.jsx'
 import BottomNav from './components/BottonNav/BottomNav.jsx'
+import MyCard from  './components/About/About.jsx'
 
 function App() {
   const btnText = 'Login';  
@@ -22,6 +23,7 @@ function App() {
     <>
       <Navbar links={links} />
       <Button name={btnText} />
+
       <Routes>
         <Route 
           path = '/'
@@ -29,7 +31,7 @@ function App() {
         />
         <Route 
           path = '/about'
-          element = {<BottomNav />}
+          element = {<MyCard />}
         />
         <Route 
           path = '/astros'
